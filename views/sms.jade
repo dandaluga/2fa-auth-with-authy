@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+    form(action='/sms', method='post')
+        br
+        input(type="text", placeholder="uid", name="uid", value="Authy UID Here")
+        br
+        input(type="submit", value="submit")
+
+  //if (sms)
+  //  p SMS Data:
+  //      br
+  //      | Cellphone: #{sms.cellphone}
+  //      br
+  //      | Message: #{sms.message}
+  //      br
+  //      | Status: #{sms.success}
