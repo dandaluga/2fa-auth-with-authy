@@ -43,7 +43,6 @@ app.use(function(req,res,next){
 });
 
 app.use('/', index);
-app.use('/users', users);
 app.use('/register', register);
 app.use('/sms', sms);
 app.use('/verify', verify);
